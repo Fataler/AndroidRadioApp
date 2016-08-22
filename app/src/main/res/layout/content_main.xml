@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    tools:context="com.fcode.fpp.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/relMain"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:src="@drawable/fpp_logo2"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="false"
+        android:elevation="3dp"
+        android:adjustViewBounds="false"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Far Past Post "
+        android:id="@+id/trackartist"
+        android:textAlignment="gravity"
+        android:focusableInTouchMode="false"
+        android:singleLine="false"
+        android:textStyle="bold"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/trackInfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/logo"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Post Rock Radio and Podcasts"
+        android:id="@+id/trackInfo"
+        android:textAlignment="gravity"
+        android:layout_above="@+id/StartPlaybackButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:text="@string/play_str"
+        android:id="@+id/StartPlaybackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:srcCompat="@drawable/vector_drawable_ic_play_svg"
+        android:adjustViewBounds="false"
+        android:background="#0000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        android:layout_alignParentEnd="false"
+        android:foregroundGravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1">
+
+    </ImageButton>
+
+</LinearLayout>

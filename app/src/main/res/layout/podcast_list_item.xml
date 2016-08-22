@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aug\n 15"
+        android:id="@+id/PodcastDate"
+        android:layout_weight="0.94"
+        android:textStyle="italic"
+        android:lines="2"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:text="Farpastpost Postrock Podcasts EP. 300"
+        android:id="@+id/PodcastName"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:elegantTextHeight="false"
+        android:lines="2"
+        android:nestedScrollingEnabled="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:layout_weight="1.74" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PodcatsPlay"
+        app:srcCompat="@drawable/vector_drawable_ic_play_svg"
+        android:layout_weight="0.33"
+        android:layout_gravity="center"
+        android:background="#00ffffff" />
+</LinearLayout>

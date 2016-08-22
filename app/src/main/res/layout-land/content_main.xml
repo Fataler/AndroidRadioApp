@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?attr/actionBarSize"
+
+    tools:context="com.fcode.fpp.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/logo"
+            android:src="@drawable/fpp_logo"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/album_art"
+            android:layout_margin="16dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Far Past Post "
+            android:id="@+id/trackartist"
+            android:textAlignment="gravity"
+            android:focusableInTouchMode="false"
+            android:singleLine="false"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Post Rock Radio and Podcasts"
+            android:id="@+id/trackInfo"
+            android:gravity="center|center_horizontal"
+            android:textAlignment="gravity"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/trackartist"
+            android:layout_centerInParent="true" />
+
+        <ImageButton
+            android:text="@string/play_str"
+            android:id="@+id/StartPlaybackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_play_circle_outline_white_48dp"
+            android:adjustViewBounds="false"
+            android:background="#0000"
+            android:scaleType="centerInside"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/trackInfo"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/button_start_stop"
+            android:elevation="2dp">
+
+        </ImageButton>
+    </RelativeLayout>
+
+</LinearLayout>
